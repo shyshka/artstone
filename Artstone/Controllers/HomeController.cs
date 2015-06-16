@@ -19,7 +19,6 @@ namespace Artstone.Controllers
         {
             Random rnd = new Random();
             string[] lstPhotos = Directory.GetFiles(Server.MapPath("~/Images/Single"));
-
             HomeModel model = new HomeModel();
             for (int i = 0; i < 10; i++)
             {

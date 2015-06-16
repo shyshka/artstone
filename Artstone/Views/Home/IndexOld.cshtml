@@ -1,15 +1,45 @@
-﻿@{
-    ViewBag.Title = "IndexNova";
-    Layout = "~/Views/Shared/_LayoutNova.cshtml";
+﻿@model Artstone.Models.HomeModel
+
+@{Layout = "~/Views/Shared/_Layout.cshtml";}
+@{
+    ViewBag.Title = "Головна";    
 }
 
-<div class="banner text-center">
-    <div class="container">
-        <img src="~/Images/banner.jpg" style="" />
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        @for (int i=0;i<10;i++)
+        {
+            var activeStr = i==0?"active":string.Empty;
+            <li data-target="#myCarousel" data-slide-to="@i" class="@activeStr"></li>            
+        }      
+    </ol>
+
+    <!-- Wrapper for slides -->   
+    <div class="carousel-inner" role="listbox">          
+        @for (int i = 0; i < 10; i++)
+        {           
+            var val = Model.SliderPictures[i].ImageFilePath;            
+            var src = Path.Combine("Images", Directory.GetParent(val).Name, Path.GetFileName(val));                        
+            var activeStr  = i==0?"active":string.Empty;
+            <div class="item @activeStr">
+                <img src="@src" width="200" class="img-responsive center-block">
+            </div>   
+        }
     </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
 </div>
 
-<br>
+
 <div class="main">
     <div class="featured_content" id="feature">
         <div class="container">

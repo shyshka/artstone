@@ -118,6 +118,7 @@
     </Compile>
     <Compile Include="Models\HomeModel.cs" />
     <Compile Include="Models\Monument.cs" />
+    <Compile Include="Models\SingleModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -126,6 +127,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\jssor.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -133,33 +135,38 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Icon.png" />
+    <Content Include="Images\a17.png" />
     <Content Include="Images\banner.jpg" />
+    <Content Include="Images\loading.gif" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\Mail.png" />
     <Content Include="Images\Phone.png" />
     <Content Include="Images\Pictures.png" />
     <Content Include="Images\price.png" />
-    <Content Include="Images\Single\1.JPG" />
-    <Content Include="Images\Single\10.JPG" />
-    <Content Include="Images\Single\11.jpg" />
-    <Content Include="Images\Single\12.jpg" />
-    <Content Include="Images\Single\13.jpg" />
-    <Content Include="Images\Single\14.JPG" />
-    <Content Include="Images\Single\15.jpg" />
-    <Content Include="Images\Single\2.JPG" />
-    <Content Include="Images\Single\3.JPG" />
-    <Content Include="Images\Single\4.JPG" />
-    <Content Include="Images\Single\5.JPG" />
-    <Content Include="Images\Single\6.JPG" />
-    <Content Include="Images\Single\7.JPG" />
-    <Content Include="Images\Single\8.JPG" />
-    <Content Include="Images\Single\9.JPG" />
+    <Content Include="Images\Single\01.JPG" />
+    <Content Include="Images\Single\010.JPG" />
+    <Content Include="Images\Single\011.JPG" />
+    <Content Include="Images\Single\012.JPG" />
+    <Content Include="Images\Single\013.JPG" />
+    <Content Include="Images\Single\014.JPG" />
+    <Content Include="Images\Single\015.JPG" />
+    <Content Include="Images\Single\02.JPG" />
+    <Content Include="Images\Single\03.jpg" />
+    <Content Include="Images\Single\04.jpg" />
+    <Content Include="Images\Single\05.jpg" />
+    <Content Include="Images\Single\06.JPG" />
+    <Content Include="Images\Single\07.jpg" />
+    <Content Include="Images\Single\08.JPG" />
+    <Content Include="Images\Single\09.JPG" />
+    <Content Include="Images\t01.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-2.1.4.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.4.js" />
     <Content Include="Scripts\jquery-2.1.4.min.js" />
     <Content Include="Scripts\jquery.js" />
+    <Content Include="Scripts\jssor.js" />
+    <Content Include="Scripts\jssor.slider.js" />
     <Content Include="Scripts\npm.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -170,9 +177,9 @@
     </Content>
     <Content Include="Views\Web.config" />
     <Content Include="Scripts\jquery-2.1.4.min.map" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Single\Index.cshtml" />
-    <Content Include="Views\Shared\_LayoutNova.cshtml" />
-    <Content Include="Views\Home\IndexNova.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -183,10 +190,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\IndexOld.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_LayoutOld.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
