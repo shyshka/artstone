@@ -111,6 +111,7 @@
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="Content\stylenova.css" />
     <Content Include="Content\style.css" />
+    <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SingleController.cs" />
     <Compile Include="Global.asax.cs">
@@ -180,6 +181,7 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Single\Index.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

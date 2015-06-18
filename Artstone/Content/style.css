@@ -1,4 +1,4 @@
-﻿body {
+﻿/*body {
   padding-top: 80px;
   margin-bottom: 60px;
 }
@@ -22,4 +22,9 @@ html {
 
 .container .text-muted {
   margin: 20px 0;
+}*/
+
+.navbar-default
+{
+    background-color:#000;
 }

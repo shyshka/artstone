@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<script src="http://maps.googleapis.com/maps/api/js">
+</script>
+
+<script>
+    var myCenter = new google.maps.LatLng(50.3166139, 29.0452447, 14);
+
+    function initialize() {
+        var mapProp = {
+            center: myCenter,
+            zoom: 15,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+        var marker = new google.maps.Marker({
+            position: myCenter
+        });
+
+        marker.setMap(map);
+
+        var infowindow = new google.maps.InfoWindow({
+            content: "<b>Loop, Inc.</b> 795 Park Ave, Suite 120<br>San Francisco, CA 94107<br><img src='myimage.jpg' alt='image in infowindow'>"
+        });
+
+        google.maps.event.addListener(marker, 'click', function () {
+            infowindow.open(map, marker);
+        });
+
+        infowindow.open(map, marker);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<div class="container">
+    <div id="googleMap" style="width:750px;height:480px;"></div>
+</div>
