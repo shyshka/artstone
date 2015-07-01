@@ -26,7 +26,7 @@
         marker.setMap(map);
 
         var infowindow = new google.maps.InfoWindow({
-            content: "<b>Loop, Inc.</b> 795 Park Ave, Suite 120<br>San Francisco, CA 94107<br><img src='myimage.jpg' alt='image in infowindow'>"
+            content: "<b>ПП \"Яровий\"</b><br>м. Коростишів, Житомирська область<br>вул. Гетьмана Скоропадського 20<br><img src='../images/info.png' alt='ПП \"Яровий\"'> Тел. 063-444-34-51"
         });
 
         google.maps.event.addListener(marker, 'click', function () {
@@ -39,6 +39,16 @@
     google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 
-<div class="container">
-    <div id="googleMap" style="width:750px;height:480px;"></div>
+
+<div class="banner text-center">
+    <div class="container">
+        <div class=" banner-info">
+            <h1>Ви можете нас знайти за адресою:</h1>
+        </div>
+    </div>    
 </div>
+
+<div class="container">
+    <div id="googleMap" style="padding:20px;width:1080px;height:580px;"></div>
+</div>
+    

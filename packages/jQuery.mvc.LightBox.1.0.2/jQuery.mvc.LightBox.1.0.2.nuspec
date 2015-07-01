@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>jQuery.mvc.LightBox</id>
+    <version>1.0.2</version>
+    <title>Lightbox for MVC</title>
+    <authors>Piotr Sobczak</authors>
+    <owners>Piotr Sobczak</owners>
+    <licenseUrl>http://creativecommons.org/licenses/by/2.5/</licenseUrl>
+    <projectUrl>http://lokeshdhakar.com/projects/lightbox2/</projectUrl>
+    <iconUrl>http://lokeshdhakar.com/projects/lightbox2/img/demopage/favicon.ico</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Package for Lightbox that is small javascript library used to overlay images on top of the current page. It's a snap to setup and works on all modern browsers.</description>
+    <summary>Free for use in both personal and commercial projects.
+Attribution requires leaving author name, author homepage link, and the license info intact.</summary>
+    <releaseNotes>Lightbox Author by Lokesh Dhakar</releaseNotes>
+    <copyright>Lokesh Dhaka</copyright>
+    <language>en-GB</language>
+    <tags>javascript jQuery lightbox image</tags>
+    <dependencies>
+      <dependency id="jQuery" version="1.10.2" />
+      <dependency id="Modernizr" version="2.6.2" />
+    </dependencies>
+  </metadata>
+</package>

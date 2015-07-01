@@ -10,7 +10,7 @@ p {
 html, body {
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 100%;
-	background-color: #FFF;
+	background-color: #ebe6e4;
 }
 body a {
 	transition: 0.5s all;
@@ -135,13 +135,17 @@ body a {
 }
 }
 .banner {
-	background: url(../images/banner.jpg) no-repeat center;
+	background: url(../images/banner.jpg) repeat center;
 	min-height: 100px;
 }
 .banner-info {
-	margin-top: 8em;
+	margin-top: 4em;
+    margin-bottom: 4em;
 }
 .banner-info h1 {
+    font-family: 'Courier New';
+    font-style:italic;
+    text-shadow: 3px 3px 20px #999, 0 0 1em #555;
 	font-size: 3em;
 	color: #EFBF96;
 	line-height: 1.4em;
@@ -188,7 +192,7 @@ a.banner-btn span:hover {
 	line-height: 0.6em;
 }
 .featured_content {
-	background: #6fb0b7;
+	background: #DFD7CE;
 }
 .feature_grid1 {
 	width: 23.5%;
@@ -372,15 +376,20 @@ ul.social_left li.fb_text {
 	margin-top: 1em;
 }
 .footer_bottom {
-	padding: 2em 0;
-	background: #653a20;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35px;    
+    background-color: #653a20;
+	padding: 10px 0;
+	background: #b5c7c9;
 }
 .copy {
 	text-align: center;
 }
 .copy p {
 	font-size: 1em;
-	color: #fff;
+	color: #555;
 }
 .copy p a {
 	color: #fff;
@@ -860,3 +869,12 @@ ul.about_grid1 li.about_desc p {
 }
 }
 
+
+.navbar-default .navbar-nav>li>a {
+  color: #ECECEC;
+}
+
+.navbar-default
+{
+    background-color:#000;
+}
